@@ -1,6 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:ghost_app/Constant/constant.dart';
+import 'package:ghost_app/Screen/animated_splash_screen.dart';
+import 'package:ghost_app/Screen/home_page.dart';
+import 'package:ghost_app/Screen/image_splash_screen.dart';
+import 'package:ghost_app/Screen/video_splash_screen.dart';
 
-void main() => runApp(MyApp());
+Future main() async {
+  runApp(new MaterialApp(
+    title: 'Ghost App Splash',
+    debugShowCheckedModeBanner: false,
+    theme: new ThemeData(
+      primarySwatch: Colors.red,
+    ),
+    home: new AnimatedSplashScreen(),
+    routes: <String, WidgetBuilder>{
+      HOME_SCREEN: (BuildContext context) => new HomeScreen(),
+      VIDEO_SPALSH: (BuildContext context) => new VideoSplashScreen(),
+      IMAGE_SPLASH: (BuildContext context) => new ImageSplashScreen(),
+      ANIMATED_SPALSH: (BuildContext context) => new AnimatedSplashScreen()
+    },
+  ));
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.

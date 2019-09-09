@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:AeologicSplashDemo/Constant/Constant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ghost_app/constant/constant.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoSplashScreen extends StatefulWidget {

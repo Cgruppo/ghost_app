@@ -1,4 +1,4 @@
-import 'package:AeologicSplashDemo/Constant/Constant.dart';
+import 'package:ghost_app/constant/constant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
